@@ -8,6 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Exo2-Bold.otf">
+            <string>Exo2-Bold</string>
+        </array>
         <array key="Exo2-Regular.otf">
             <string>Exo2-Regular</string>
         </array>
@@ -62,6 +65,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="pe6-gJ-IcN" kind="relationship" relationship="viewControllers" id="GsG-r3-a1T"/>
+                        <segue destination="vkz-WF-ISd" kind="relationship" relationship="viewControllers" id="XRP-Kj-iVi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7R-6P-gsP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -260,13 +264,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bst-JA-yp7">
-                                        <rect key="frame" x="16" y="16" width="70" height="34"/>
+                                        <rect key="frame" x="16" y="16" width="382" height="34"/>
                                         <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="28"/>
                                         <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-p6-4O5">
-                                        <rect key="frame" x="16" y="58" width="44.5" height="22"/>
+                                        <rect key="frame" x="16" y="58" width="382" height="22"/>
                                         <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="18"/>
                                         <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -275,11 +279,11 @@
                                 <color key="backgroundColor" red="0.10980392156862745" green="0.11764705882352941" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="4mK-x4-sa8"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aY0-p6-4O5" secondAttribute="trailing" constant="20" symbolic="YES" id="C16-ao-K8p"/>
+                                    <constraint firstAttribute="trailing" secondItem="aY0-p6-4O5" secondAttribute="trailing" constant="16" id="DLZ-Xr-I8Y"/>
                                     <constraint firstItem="aY0-p6-4O5" firstAttribute="leading" secondItem="a6d-1p-oyY" secondAttribute="leading" constant="16" id="Mlz-z8-NZP"/>
                                     <constraint firstItem="aY0-p6-4O5" firstAttribute="top" secondItem="bst-JA-yp7" secondAttribute="bottom" constant="8" id="SSh-3j-I2b"/>
                                     <constraint firstItem="bst-JA-yp7" firstAttribute="leading" secondItem="a6d-1p-oyY" secondAttribute="leading" constant="16" id="WQ0-h0-VQy"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bst-JA-yp7" secondAttribute="trailing" constant="20" symbolic="YES" id="op9-9Z-kEh"/>
+                                    <constraint firstAttribute="trailing" secondItem="bst-JA-yp7" secondAttribute="trailing" constant="16" id="est-8U-lco"/>
                                     <constraint firstItem="bst-JA-yp7" firstAttribute="top" secondItem="a6d-1p-oyY" secondAttribute="top" constant="16" id="wIk-IC-Rxf"/>
                                 </constraints>
                             </view>
@@ -385,7 +389,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a83-Wn-k0r">
-                                <rect key="frame" x="16" y="16" width="76.5" height="34"/>
+                                <rect key="frame" x="16" y="16" width="382" height="34"/>
                                 <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="28"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -396,7 +400,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zo-ta-QwZ">
-                                <rect key="frame" x="16" y="108" width="127.5" height="34"/>
+                                <rect key="frame" x="16" y="108" width="382" height="34"/>
                                 <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="28"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -408,17 +412,17 @@
                                     <constraint firstAttribute="height" constant="140" id="ldF-7i-GOG"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prioridade" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-b8-jTo">
-                                <rect key="frame" x="16" y="306" width="135" height="34"/>
+                                <rect key="frame" x="16" y="306" width="382" height="34"/>
                                 <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="28"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lembrete" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqy-BN-bJd">
-                                <rect key="frame" x="16" y="404" width="124" height="34"/>
+                                <rect key="frame" x="16" y="404" width="382" height="34"/>
                                 <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="28"/>
                                 <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -455,20 +459,24 @@
                             <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="ihU-KU-Onr" secondAttribute="trailing" constant="16" id="69r-uT-IdA"/>
                             <constraint firstItem="yjc-05-QxO" firstAttribute="leading" secondItem="cYM-2d-FZI" secondAttribute="leading" constant="16" id="DGq-pG-Ufg"/>
                             <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cqy-BN-bJd" secondAttribute="trailing" symbolic="YES" id="E5Y-1X-dqR"/>
+                            <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="cNB-b8-jTo" secondAttribute="trailing" constant="16" id="Pyp-Bt-nDG"/>
                             <constraint firstItem="a83-Wn-k0r" firstAttribute="leading" secondItem="cYM-2d-FZI" secondAttribute="leading" constant="16" id="SmA-0U-wdk"/>
                             <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="JPj-IU-hOE" secondAttribute="trailing" constant="16" id="TFD-Xg-gMM"/>
                             <constraint firstItem="Cqy-BN-bJd" firstAttribute="leading" secondItem="cYM-2d-FZI" secondAttribute="leading" constant="16" id="YgV-Zu-2wd"/>
+                            <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="Cqy-BN-bJd" secondAttribute="trailing" constant="16" id="bym-sy-Bn2"/>
                             <constraint firstItem="yjc-05-QxO" firstAttribute="top" secondItem="4Zo-ta-QwZ" secondAttribute="bottom" constant="8" id="cIA-kO-E21"/>
                             <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cNB-b8-jTo" secondAttribute="trailing" symbolic="YES" id="cdS-MT-3pK"/>
                             <constraint firstItem="JPj-IU-hOE" firstAttribute="top" secondItem="cNB-b8-jTo" secondAttribute="bottom" constant="8" id="ckt-5Y-Edf"/>
                             <constraint firstItem="ihU-KU-Onr" firstAttribute="leading" secondItem="cYM-2d-FZI" secondAttribute="leading" constant="16" id="dL4-i4-ZLR"/>
                             <constraint firstItem="cNB-b8-jTo" firstAttribute="leading" secondItem="cYM-2d-FZI" secondAttribute="leading" constant="16" id="gAl-A3-izU"/>
                             <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="yjc-05-QxO" secondAttribute="trailing" constant="16" id="gOc-dJ-lfF"/>
+                            <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="a83-Wn-k0r" secondAttribute="trailing" constant="16" id="l3N-4w-9yh"/>
                             <constraint firstItem="ihU-KU-Onr" firstAttribute="top" secondItem="a83-Wn-k0r" secondAttribute="bottom" constant="8" id="oK9-Uh-RHg"/>
                             <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="dks-VS-uOB" secondAttribute="trailing" constant="16" id="p6Q-y1-FdZ"/>
                             <constraint firstItem="cNB-b8-jTo" firstAttribute="top" secondItem="yjc-05-QxO" secondAttribute="bottom" constant="16" id="pOo-2Z-8Ze"/>
                             <constraint firstItem="dks-VS-uOB" firstAttribute="top" secondItem="Cqy-BN-bJd" secondAttribute="bottom" constant="8" id="svF-0a-sqS"/>
                             <constraint firstItem="a83-Wn-k0r" firstAttribute="top" secondItem="cYM-2d-FZI" secondAttribute="top" constant="16" id="tlD-7H-wPs"/>
+                            <constraint firstItem="cYM-2d-FZI" firstAttribute="trailing" secondItem="4Zo-ta-QwZ" secondAttribute="trailing" constant="16" id="z7Y-RF-gQy"/>
                             <constraint firstItem="dks-VS-uOB" firstAttribute="leading" secondItem="cYM-2d-FZI" secondAttribute="leading" constant="16" id="ziO-Kr-L3I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cYM-2d-FZI"/>
@@ -497,8 +505,254 @@
             </objects>
             <point key="canvasLocation" x="675" y="498"/>
         </scene>
+        <!--Reflexões-->
+        <scene sceneID="btX-BN-gOr">
+            <objects>
+                <navigationController id="vkz-WF-ISd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Reflexões" image="pencil.circle.fill" catalog="system" id="iAz-AQ-BOw"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="O5B-qD-KWa">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.10980392160000001" green="0.1176470588" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jSC-G4-mGL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="vnc-Hq-mVT" kind="relationship" relationship="rootViewController" id="MDa-Pz-AFj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rvf-TK-1aw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1117" y="1421"/>
+        </scene>
+        <!--Reflexões-->
+        <scene sceneID="BUR-Pa-vvd">
+            <objects>
+                <viewController id="vnc-Hq-mVT" customClass="ReflexaoViewController" customModule="Proativi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NXW-8v-P5r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VLD-RM-cdX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.074509803921568626" green="0.078431372549019607" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F0K-us-Jw1">
+                                    <size key="itemSize" width="382" height="100"/>
+                                    <size key="headerReferenceSize" width="50" height="10"/>
+                                    <size key="footerReferenceSize" width="50" height="10"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="reflexCell" id="Rlm-9R-FOa" customClass="ReflexCollectionViewCell" customModule="Proativi" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="10" width="382" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oLX-E1-X8q">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dia:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLo-hy-Htu">
+                                                    <rect key="frame" x="16" y="16" width="35" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="20"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDI-17-9Ta">
+                                                    <rect key="frame" x="56" y="16" width="51" height="24"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="20"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Otl-Yh-F20">
+                                                    <rect key="frame" x="16" y="48" width="350" height="22"/>
+                                                    <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="18"/>
+                                                    <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="fLo-hy-Htu" firstAttribute="top" secondItem="oLX-E1-X8q" secondAttribute="top" constant="16" id="3EG-LJ-ttA"/>
+                                                <constraint firstItem="fLo-hy-Htu" firstAttribute="leading" secondItem="oLX-E1-X8q" secondAttribute="leading" constant="16" id="4EX-U6-Dnz"/>
+                                                <constraint firstItem="DDI-17-9Ta" firstAttribute="leading" secondItem="fLo-hy-Htu" secondAttribute="trailing" constant="5" id="Cpk-QA-5re"/>
+                                                <constraint firstItem="Otl-Yh-F20" firstAttribute="leading" secondItem="oLX-E1-X8q" secondAttribute="leading" constant="16" id="Pzl-db-myV"/>
+                                                <constraint firstAttribute="trailing" secondItem="Otl-Yh-F20" secondAttribute="trailing" constant="16" id="Yh5-0b-cKf"/>
+                                                <constraint firstItem="Otl-Yh-F20" firstAttribute="top" secondItem="fLo-hy-Htu" secondAttribute="bottom" constant="8" id="oMa-Lf-MuI"/>
+                                                <constraint firstItem="DDI-17-9Ta" firstAttribute="centerY" secondItem="fLo-hy-Htu" secondAttribute="centerY" id="uvs-TO-KG1"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" red="0.1647058824" green="0.14901960780000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="dataLabel" destination="DDI-17-9Ta" id="u6T-zC-BuW"/>
+                                            <outlet property="tituloLabel" destination="Otl-Yh-F20" id="cxq-vo-okX"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="reflexHeader" id="ger-OZ-mfJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="reflexFooter" id="mwO-Gr-7cA">
+                                    <rect key="frame" x="0.0" y="110" width="414" height="10"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="vnc-Hq-mVT" id="4D3-uk-fhD"/>
+                                    <outlet property="delegate" destination="vnc-Hq-mVT" id="kxD-Vc-hvw"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ad-d8-ham" firstAttribute="bottom" secondItem="VLD-RM-cdX" secondAttribute="bottom" id="8rp-kA-9Nd"/>
+                            <constraint firstItem="7Ad-d8-ham" firstAttribute="trailing" secondItem="VLD-RM-cdX" secondAttribute="trailing" id="Ob8-pX-4ox"/>
+                            <constraint firstItem="VLD-RM-cdX" firstAttribute="top" secondItem="7Ad-d8-ham" secondAttribute="top" id="mXa-jx-P6q"/>
+                            <constraint firstItem="VLD-RM-cdX" firstAttribute="leading" secondItem="7Ad-d8-ham" secondAttribute="leading" id="nSO-dz-EOC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Ad-d8-ham"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reflexões" id="LUp-CO-2AX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GBM-mI-jx1">
+                            <connections>
+                                <segue destination="H5R-DW-mlN" kind="show" identifier="addReflex" id="Xze-Ze-s4Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectView" destination="VLD-RM-cdX" id="htH-74-beT"/>
+                        <segue destination="bge-Ps-58b" kind="show" identifier="reflexDetail" id="QXV-Cw-PoB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2u-PX-yEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210.1449275362319" y="1420.9821428571429"/>
+        </scene>
+        <!--Nova Reflexão-->
+        <scene sceneID="rj6-t0-HhU">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="H5R-DW-mlN" customClass="NovaReflexViewController" customModule="Proativi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SF5-n6-1SO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9F-Jf-8K2">
+                                <rect key="frame" x="16" y="16" width="382" height="34"/>
+                                <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="28"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgB-7f-vPd">
+                                <rect key="frame" x="16" y="108" width="382" height="34"/>
+                                <fontDescription key="fontDescription" name="Exo2-SemiBold" family="Exo 2" pointSize="28"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4jT-FD-Uu6">
+                                <rect key="frame" x="16" y="58" width="382" height="34"/>
+                                <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eEs-5s-abg">
+                                <rect key="frame" x="16" y="158" width="382" height="280"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="p1B-ox-O47"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XgB-7f-vPd" firstAttribute="top" secondItem="4jT-FD-Uu6" secondAttribute="bottom" constant="16" id="6tm-ph-cRF"/>
+                            <constraint firstItem="k9F-Jf-8K2" firstAttribute="leading" secondItem="Mi0-PN-aqY" secondAttribute="leading" constant="16" id="Afb-T1-Wwj"/>
+                            <constraint firstItem="Mi0-PN-aqY" firstAttribute="trailing" secondItem="XgB-7f-vPd" secondAttribute="trailing" constant="16" id="H63-gH-bNh"/>
+                            <constraint firstItem="XgB-7f-vPd" firstAttribute="leading" secondItem="Mi0-PN-aqY" secondAttribute="leading" constant="16" id="LT9-wS-XCm"/>
+                            <constraint firstItem="Mi0-PN-aqY" firstAttribute="trailing" secondItem="k9F-Jf-8K2" secondAttribute="trailing" constant="16" id="OVx-cf-IbD"/>
+                            <constraint firstItem="Mi0-PN-aqY" firstAttribute="trailing" secondItem="eEs-5s-abg" secondAttribute="trailing" constant="16" id="gBy-2h-Hwr"/>
+                            <constraint firstItem="4jT-FD-Uu6" firstAttribute="leading" secondItem="Mi0-PN-aqY" secondAttribute="leading" constant="16" id="iBA-Ty-ra3"/>
+                            <constraint firstItem="Mi0-PN-aqY" firstAttribute="trailing" secondItem="4jT-FD-Uu6" secondAttribute="trailing" constant="16" id="jjV-Qp-MSf"/>
+                            <constraint firstItem="k9F-Jf-8K2" firstAttribute="top" secondItem="Mi0-PN-aqY" secondAttribute="top" constant="16" id="kZP-mR-oxg"/>
+                            <constraint firstItem="4jT-FD-Uu6" firstAttribute="top" secondItem="k9F-Jf-8K2" secondAttribute="bottom" constant="8" id="mxG-a5-ceU"/>
+                            <constraint firstItem="eEs-5s-abg" firstAttribute="leading" secondItem="Mi0-PN-aqY" secondAttribute="leading" constant="16" id="uHU-Fd-atL"/>
+                            <constraint firstItem="eEs-5s-abg" firstAttribute="top" secondItem="XgB-7f-vPd" secondAttribute="bottom" constant="16" id="yCB-ck-E2s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mi0-PN-aqY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nova Reflexão" id="4JI-YH-hDd">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="5Lx-IM-Hhr">
+                            <connections>
+                                <action selector="cancelReflex:" destination="H5R-DW-mlN" id="Icw-28-fET"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Adicionar" id="UqH-FX-ga7">
+                            <connections>
+                                <action selector="addReflex:" destination="H5R-DW-mlN" id="4y8-43-W5J"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descTextView" destination="eEs-5s-abg" id="y0v-6A-Lcg"/>
+                        <outlet property="tituloTextField" destination="4jT-FD-Uu6" id="2YF-Gt-ilQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Tk-by-1uN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="1421"/>
+        </scene>
+        <!--Reflexão-->
+        <scene sceneID="9T8-y7-lRl">
+            <objects>
+                <viewController storyboardIdentifier="DetalheReflexViewController" hidesBottomBarWhenPushed="YES" id="bge-Ps-58b" customClass="DetalheReflexViewController" customModule="Proativi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zfX-fO-y98">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título da reflexão" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pv-hy-wZk">
+                                <rect key="frame" x="16" y="16" width="382" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Exo2-Bold" family="Exo 2" pointSize="32"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSZ-Cb-ZsR">
+                                <rect key="frame" x="16" y="70.5" width="382" height="86.5"/>
+                                <string key="text">Texto da reflexão vai aqui para aqueles que quiserem saber como funciona ela. Mais tarde colocarei um exemplo de reflexao para substituir</string>
+                                <fontDescription key="fontDescription" name="Exo2-Regular" family="Exo 2" pointSize="18"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9pv-hy-wZk" firstAttribute="top" secondItem="feA-Gv-noC" secondAttribute="top" constant="16" id="BYf-h8-2yp"/>
+                            <constraint firstItem="9pv-hy-wZk" firstAttribute="leading" secondItem="feA-Gv-noC" secondAttribute="leading" constant="16" id="FUU-5L-LQ8"/>
+                            <constraint firstItem="feA-Gv-noC" firstAttribute="trailing" secondItem="9pv-hy-wZk" secondAttribute="trailing" constant="16" id="YBz-Zk-NKN"/>
+                            <constraint firstItem="feA-Gv-noC" firstAttribute="trailing" secondItem="cSZ-Cb-ZsR" secondAttribute="trailing" constant="16" id="YM6-fI-mUH"/>
+                            <constraint firstItem="cSZ-Cb-ZsR" firstAttribute="top" secondItem="9pv-hy-wZk" secondAttribute="bottom" constant="16" id="oiI-5b-Ncp"/>
+                            <constraint firstItem="cSZ-Cb-ZsR" firstAttribute="leading" secondItem="feA-Gv-noC" secondAttribute="leading" constant="16" id="t4p-H5-Q5p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="feA-Gv-noC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reflexão" id="XTF-AA-29U"/>
+                    <connections>
+                        <outlet property="descLabel" destination="cSZ-Cb-ZsR" id="qWB-bl-WYO"/>
+                        <outlet property="tituloLabel" destination="9pv-hy-wZk" id="9Ox-kI-mD5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QU8-pg-lTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="2148"/>
+        </scene>
     </scenes>
     <resources>
         <image name="checkmark.rectangle.fill" catalog="system" width="64" height="46"/>
+        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

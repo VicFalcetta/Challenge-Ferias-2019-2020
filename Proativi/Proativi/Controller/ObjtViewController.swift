@@ -18,7 +18,6 @@ class ObjtViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var completos = 0
     var pendentes: Int
     var objArray: [Objetivos]
-    let objTest = Objetivos(titulo: "Fazer o app", descricao: "Conseguir terminar o app a tempo de entregar", prioridade: 3, hora: "19h30")
     
     let date = Date()
     let format = DateFormatter()
@@ -37,7 +36,6 @@ class ObjtViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        objArray.append(objTest)
         pendentes = objArray.count
         
         pendentesObj.text = String(pendentes)
@@ -102,16 +100,6 @@ class ObjtViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 novoObjViewController.delegate = self
             }
         }
-        
-//        if segue.identifier == "detalheObj" {
-//            guard let detalheVC = segue.destination as? DetalheObjViewController else { return }
-//            let rowIndex = objArray.count - 1
-//            let indexPath = IndexPath(row: rowIndex, section: 0)
-//            print(indexPath.row)
-//            detalheVC.titulo = objArray[indexPath.row].titulo
-//            detalheVC.descricao = objArray[indexPath.row].descricao
-//
-//        }
     }
     
     @IBAction func didUnwindFromDetalheObj(_ sender: UIStoryboardSegue) {
@@ -134,6 +122,4 @@ extension ObjtViewController: NovoObjViewControllerDelegate {
         cView.insertItems(at: indexPaths)
         pendentes += 1
     }
-    
-    
 }

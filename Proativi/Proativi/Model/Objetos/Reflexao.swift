@@ -9,13 +9,13 @@
 import Foundation
 
 class Reflexao {
-    let titulo: String
-    let descricao: String
-    let emocao: Int
+    var titulo: String
+    var descricao: String
+//    let emocao: Int
     
-    init(titulo: String, descricao: String, emocao: Int) {
+    init(titulo: String, descricao: String) {
         self.titulo = titulo
         self.descricao = descricao
-        self.emocao = emocao
+//        self.emocao = emocao
     }
 }

@@ -76,6 +76,11 @@ class NovoObjViewController: UIViewController, UITextViewDelegate, UITextFieldDe
         // Do any additional setup after loading the view.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+    
     func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
             textView.resignFirstResponder()

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		223D80DA23E241E2002F5DFA /* DetalheObjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80D923E241E2002F5DFA /* DetalheObjViewController.swift */; };
+		223D80DC23E3B014002F5DFA /* ReflexCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80DB23E3B014002F5DFA /* ReflexCollectionViewCell.swift */; };
+		223D80DE23E3B06A002F5DFA /* ReflexaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80DD23E3B06A002F5DFA /* ReflexaoViewController.swift */; };
+		223D80E023E3B078002F5DFA /* NovaReflexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80DF23E3B078002F5DFA /* NovaReflexViewController.swift */; };
+		223D80E223E3B088002F5DFA /* DetalheReflexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80E123E3B088002F5DFA /* DetalheReflexViewController.swift */; };
 		22CC81B723DA738000058EC1 /* Objetivos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81B623DA738000058EC1 /* Objetivos.swift */; };
 		22CC81B923DA74A700058EC1 /* Reflexao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81B823DA74A700058EC1 /* Reflexao.swift */; };
 		22CC81BD23DB915D00058EC1 /* ObjCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */; };
@@ -50,6 +54,10 @@
 		223D80D723E1CE30002F5DFA /* Exo2-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-MediumItalic.otf"; sourceTree = "<group>"; };
 		223D80D823E1CE30002F5DFA /* Exo2-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
 		223D80D923E241E2002F5DFA /* DetalheObjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheObjViewController.swift; sourceTree = "<group>"; };
+		223D80DB23E3B014002F5DFA /* ReflexCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexCollectionViewCell.swift; sourceTree = "<group>"; };
+		223D80DD23E3B06A002F5DFA /* ReflexaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexaoViewController.swift; sourceTree = "<group>"; };
+		223D80DF23E3B078002F5DFA /* NovaReflexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaReflexViewController.swift; sourceTree = "<group>"; };
+		223D80E123E3B088002F5DFA /* DetalheReflexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheReflexViewController.swift; sourceTree = "<group>"; };
 		22CC81B623DA738000058EC1 /* Objetivos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetivos.swift; sourceTree = "<group>"; };
 		22CC81B823DA74A700058EC1 /* Reflexao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflexao.swift; sourceTree = "<group>"; };
 		22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -115,6 +123,7 @@
 			children = (
 				22CC81BA23DB912000058EC1 /* Objetos */,
 				22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */,
+				223D80DB23E3B014002F5DFA /* ReflexCollectionViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +176,9 @@
 				22EFB16F23DA6BEE002D35B1 /* ObjtViewController.swift */,
 				22EFB15C23D8F9ED002D35B1 /* NovoObjViewController.swift */,
 				223D80D923E241E2002F5DFA /* DetalheObjViewController.swift */,
+				223D80DD23E3B06A002F5DFA /* ReflexaoViewController.swift */,
+				223D80DF23E3B078002F5DFA /* NovaReflexViewController.swift */,
+				223D80E123E3B088002F5DFA /* DetalheReflexViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,9 +257,13 @@
 				22CC81BD23DB915D00058EC1 /* ObjCollectionViewCell.swift in Sources */,
 				22CC81B923DA74A700058EC1 /* Reflexao.swift in Sources */,
 				22EFB15D23D8F9ED002D35B1 /* NovoObjViewController.swift in Sources */,
+				223D80DE23E3B06A002F5DFA /* ReflexaoViewController.swift in Sources */,
 				22CC81B723DA738000058EC1 /* Objetivos.swift in Sources */,
 				22EFB17023DA6BEE002D35B1 /* ObjtViewController.swift in Sources */,
+				223D80E023E3B078002F5DFA /* NovaReflexViewController.swift in Sources */,
+				223D80E223E3B088002F5DFA /* DetalheReflexViewController.swift in Sources */,
 				22EFB15923D8F9ED002D35B1 /* AppDelegate.swift in Sources */,
+				223D80DC23E3B014002F5DFA /* ReflexCollectionViewCell.swift in Sources */,
 				22EFB15B23D8F9ED002D35B1 /* SceneDelegate.swift in Sources */,
 				22EFB16323D8F9ED002D35B1 /* Proativi.xcdatamodeld in Sources */,
 				223D80DA23E241E2002F5DFA /* DetalheObjViewController.swift in Sources */,

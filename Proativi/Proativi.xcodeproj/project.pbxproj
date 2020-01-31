@@ -7,25 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223D80DA23E241E2002F5DFA /* DetalheObjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80D923E241E2002F5DFA /* DetalheObjViewController.swift */; };
+		22CC81B723DA738000058EC1 /* Objetivos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81B623DA738000058EC1 /* Objetivos.swift */; };
+		22CC81B923DA74A700058EC1 /* Reflexao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81B823DA74A700058EC1 /* Reflexao.swift */; };
+		22CC81BD23DB915D00058EC1 /* ObjCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */; };
 		22EFB15923D8F9ED002D35B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB15823D8F9ED002D35B1 /* AppDelegate.swift */; };
 		22EFB15B23D8F9ED002D35B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB15A23D8F9ED002D35B1 /* SceneDelegate.swift */; };
-		22EFB15D23D8F9ED002D35B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB15C23D8F9ED002D35B1 /* ViewController.swift */; };
+		22EFB15D23D8F9ED002D35B1 /* NovoObjViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB15C23D8F9ED002D35B1 /* NovoObjViewController.swift */; };
 		22EFB16023D8F9ED002D35B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EFB15E23D8F9ED002D35B1 /* Main.storyboard */; };
 		22EFB16323D8F9ED002D35B1 /* Proativi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB16123D8F9ED002D35B1 /* Proativi.xcdatamodeld */; };
 		22EFB16523D8F9F2002D35B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22EFB16423D8F9F2002D35B1 /* Assets.xcassets */; };
 		22EFB16823D8F9F2002D35B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22EFB16623D8F9F2002D35B1 /* LaunchScreen.storyboard */; };
+		22EFB17023DA6BEE002D35B1 /* ObjtViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EFB16F23DA6BEE002D35B1 /* ObjtViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		223D80BE23E1CE2F002F5DFA /* Exo2-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Medium.otf"; sourceTree = "<group>"; };
+		223D80BF23E1CE2F002F5DFA /* Exo2-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Black.otf"; sourceTree = "<group>"; };
+		223D80C023E1CE2F002F5DFA /* Exo2-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Bold.otf"; sourceTree = "<group>"; };
+		223D80C123E1CE2F002F5DFA /* Exo2-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BoldItalic.otf"; sourceTree = "<group>"; };
+		223D80C223E1CE2F002F5DFA /* Exo2-LightCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-LightCondensed.otf"; sourceTree = "<group>"; };
+		223D80C323E1CE2F002F5DFA /* Exo2-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BlackItalic.otf"; sourceTree = "<group>"; };
+		223D80C423E1CE2F002F5DFA /* Exo2-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Italic.otf"; sourceTree = "<group>"; };
+		223D80C523E1CE2F002F5DFA /* Exo2-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLight.otf"; sourceTree = "<group>"; };
+		223D80C623E1CE2F002F5DFA /* Exo2-MediumCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-MediumCondensed.otf"; sourceTree = "<group>"; };
+		223D80C723E1CE2F002F5DFA /* Exo2-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-LightItalic.otf"; sourceTree = "<group>"; };
+		223D80C823E1CE30002F5DFA /* Exo2-ExtraLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLightItalic.otf"; sourceTree = "<group>"; };
+		223D80C923E1CE30002F5DFA /* Exo2-BlackCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BlackCondensed.otf"; sourceTree = "<group>"; };
+		223D80CA23E1CE30002F5DFA /* Exo2-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Regular.otf"; sourceTree = "<group>"; };
+		223D80CB23E1CE30002F5DFA /* Exo2-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		223D80CC23E1CE30002F5DFA /* Exo2-RegularCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-RegularCondensed.otf"; sourceTree = "<group>"; };
+		223D80CD23E1CE30002F5DFA /* Exo2-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Thin.otf"; sourceTree = "<group>"; };
+		223D80CE23E1CE30002F5DFA /* Exo2-ExtraBoldCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBoldCondensed.otf"; sourceTree = "<group>"; };
+		223D80CF23E1CE30002F5DFA /* Exo2-ExtraLightCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraLightCondensed.otf"; sourceTree = "<group>"; };
+		223D80D023E1CE30002F5DFA /* Exo2-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-Light.otf"; sourceTree = "<group>"; };
+		223D80D123E1CE30002F5DFA /* Exo2-BoldCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-BoldCondensed.otf"; sourceTree = "<group>"; };
+		223D80D223E1CE30002F5DFA /* Exo2-SemiBoldCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBoldCondensed.otf"; sourceTree = "<group>"; };
+		223D80D323E1CE30002F5DFA /* Exo2-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-SemiBold.otf"; sourceTree = "<group>"; };
+		223D80D423E1CE30002F5DFA /* Exo2-ThinCondensed.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ThinCondensed.otf"; sourceTree = "<group>"; };
+		223D80D523E1CE30002F5DFA /* Exo2-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBold.otf"; sourceTree = "<group>"; };
+		223D80D623E1CE30002F5DFA /* Exo2-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ThinItalic.otf"; sourceTree = "<group>"; };
+		223D80D723E1CE30002F5DFA /* Exo2-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-MediumItalic.otf"; sourceTree = "<group>"; };
+		223D80D823E1CE30002F5DFA /* Exo2-ExtraBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Exo2-ExtraBoldItalic.otf"; sourceTree = "<group>"; };
+		223D80D923E241E2002F5DFA /* DetalheObjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheObjViewController.swift; sourceTree = "<group>"; };
+		22CC81B623DA738000058EC1 /* Objetivos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetivos.swift; sourceTree = "<group>"; };
+		22CC81B823DA74A700058EC1 /* Reflexao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflexao.swift; sourceTree = "<group>"; };
+		22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCollectionViewCell.swift; sourceTree = "<group>"; };
 		22EFB15523D8F9ED002D35B1 /* Proativi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Proativi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22EFB15823D8F9ED002D35B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22EFB15A23D8F9ED002D35B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22EFB15C23D8F9ED002D35B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22EFB15C23D8F9ED002D35B1 /* NovoObjViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoObjViewController.swift; sourceTree = "<group>"; };
 		22EFB15F23D8F9ED002D35B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22EFB16223D8F9ED002D35B1 /* Proativi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Proativi.xcdatamodel; sourceTree = "<group>"; };
 		22EFB16423D8F9F2002D35B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22EFB16723D8F9F2002D35B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22EFB16923D8F9F2002D35B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22EFB16F23DA6BEE002D35B1 /* ObjtViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjtViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +76,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223D80BD23E1CD9B002F5DFA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				223D80BF23E1CE2F002F5DFA /* Exo2-Black.otf */,
+				223D80C923E1CE30002F5DFA /* Exo2-BlackCondensed.otf */,
+				223D80C323E1CE2F002F5DFA /* Exo2-BlackItalic.otf */,
+				223D80C023E1CE2F002F5DFA /* Exo2-Bold.otf */,
+				223D80D123E1CE30002F5DFA /* Exo2-BoldCondensed.otf */,
+				223D80C123E1CE2F002F5DFA /* Exo2-BoldItalic.otf */,
+				223D80D523E1CE30002F5DFA /* Exo2-ExtraBold.otf */,
+				223D80CE23E1CE30002F5DFA /* Exo2-ExtraBoldCondensed.otf */,
+				223D80D823E1CE30002F5DFA /* Exo2-ExtraBoldItalic.otf */,
+				223D80C523E1CE2F002F5DFA /* Exo2-ExtraLight.otf */,
+				223D80CF23E1CE30002F5DFA /* Exo2-ExtraLightCondensed.otf */,
+				223D80C823E1CE30002F5DFA /* Exo2-ExtraLightItalic.otf */,
+				223D80C423E1CE2F002F5DFA /* Exo2-Italic.otf */,
+				223D80D023E1CE30002F5DFA /* Exo2-Light.otf */,
+				223D80C223E1CE2F002F5DFA /* Exo2-LightCondensed.otf */,
+				223D80C723E1CE2F002F5DFA /* Exo2-LightItalic.otf */,
+				223D80BE23E1CE2F002F5DFA /* Exo2-Medium.otf */,
+				223D80C623E1CE2F002F5DFA /* Exo2-MediumCondensed.otf */,
+				223D80D723E1CE30002F5DFA /* Exo2-MediumItalic.otf */,
+				223D80CA23E1CE30002F5DFA /* Exo2-Regular.otf */,
+				223D80CC23E1CE30002F5DFA /* Exo2-RegularCondensed.otf */,
+				223D80D323E1CE30002F5DFA /* Exo2-SemiBold.otf */,
+				223D80D223E1CE30002F5DFA /* Exo2-SemiBoldCondensed.otf */,
+				223D80CB23E1CE30002F5DFA /* Exo2-SemiBoldItalic.otf */,
+				223D80CD23E1CE30002F5DFA /* Exo2-Thin.otf */,
+				223D80D423E1CE30002F5DFA /* Exo2-ThinCondensed.otf */,
+				223D80D623E1CE30002F5DFA /* Exo2-ThinItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		22CC81B523DA736A00058EC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22CC81BA23DB912000058EC1 /* Objetos */,
+				22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22CC81BA23DB912000058EC1 /* Objetos */ = {
+			isa = PBXGroup;
+			children = (
+				22CC81B623DA738000058EC1 /* Objetivos.swift */,
+				22CC81B823DA74A700058EC1 /* Reflexao.swift */,
+			);
+			path = Objetos;
+			sourceTree = "<group>";
+		};
 		22EFB14C23D8F9ED002D35B1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +147,11 @@
 		22EFB15723D8F9ED002D35B1 /* Proativi */ = {
 			isa = PBXGroup;
 			children = (
+				223D80BD23E1CD9B002F5DFA /* Fonts */,
+				22CC81B523DA736A00058EC1 /* Model */,
+				22EFB17123DA6C8A002D35B1 /* Controller */,
 				22EFB15823D8F9ED002D35B1 /* AppDelegate.swift */,
 				22EFB15A23D8F9ED002D35B1 /* SceneDelegate.swift */,
-				22EFB15C23D8F9ED002D35B1 /* ViewController.swift */,
 				22EFB15E23D8F9ED002D35B1 /* Main.storyboard */,
 				22EFB16423D8F9F2002D35B1 /* Assets.xcassets */,
 				22EFB16623D8F9F2002D35B1 /* LaunchScreen.storyboard */,
@@ -68,6 +159,16 @@
 				22EFB16123D8F9ED002D35B1 /* Proativi.xcdatamodeld */,
 			);
 			path = Proativi;
+			sourceTree = "<group>";
+		};
+		22EFB17123DA6C8A002D35B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				22EFB16F23DA6BEE002D35B1 /* ObjtViewController.swift */,
+				22EFB15C23D8F9ED002D35B1 /* NovoObjViewController.swift */,
+				223D80D923E241E2002F5DFA /* DetalheObjViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +242,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EFB15D23D8F9ED002D35B1 /* ViewController.swift in Sources */,
+				22CC81BD23DB915D00058EC1 /* ObjCollectionViewCell.swift in Sources */,
+				22CC81B923DA74A700058EC1 /* Reflexao.swift in Sources */,
+				22EFB15D23D8F9ED002D35B1 /* NovoObjViewController.swift in Sources */,
+				22CC81B723DA738000058EC1 /* Objetivos.swift in Sources */,
+				22EFB17023DA6BEE002D35B1 /* ObjtViewController.swift in Sources */,
 				22EFB15923D8F9ED002D35B1 /* AppDelegate.swift in Sources */,
 				22EFB15B23D8F9ED002D35B1 /* SceneDelegate.swift in Sources */,
 				22EFB16323D8F9ED002D35B1 /* Proativi.xcdatamodeld in Sources */,
+				223D80DA23E241E2002F5DFA /* DetalheObjViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

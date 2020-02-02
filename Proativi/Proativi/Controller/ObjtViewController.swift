@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ObjtViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -15,9 +16,12 @@ class ObjtViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var pendentesObj: UILabel!
     @IBOutlet weak var completosObj: UILabel!
     
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
     var completos = 0
     var pendentes: Int
-    var objArray: [Objetivos]
+    var objArray: [Objetive]
     
     let date = Date()
     let format = DateFormatter()
@@ -44,6 +48,12 @@ class ObjtViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        do {
+            objArray = try context.fetch(Objetive.fetchRequest())
+        } catch let error as NSError{
+            print("Não foi possivel buscar o dado. \(error), \(error.userInfo)")
+        }
+        
         pendentesObj.text = String(pendentes)
         completosObj.text = String(completos)
     }
@@ -113,7 +123,7 @@ extension ObjtViewController: NovoObjViewControllerDelegate {
         navigationController?.popViewController(animated: true)
     }
     
-    func addNovoObjViewController(_ controller: NovoObjViewController, didFinishAdding item: Objetivos) {
+    func addNovoObjViewController(_ controller: NovoObjViewController, didFinishAdding item: Objetive) {
         navigationController?.popViewController(animated: true)
         let rowIndex = objArray.count
         objArray.append(item)

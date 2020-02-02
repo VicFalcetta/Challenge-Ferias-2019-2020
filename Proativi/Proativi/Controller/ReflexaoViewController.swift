@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class ReflexaoViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectView: UICollectionView!
     
-    var reflexArray: [Reflexao]
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    
+    var reflexArray: [Reflexion]
     let date = Date()
     let format = DateFormatter()
     let formattedDate: String
@@ -29,6 +33,14 @@ class ReflexaoViewController: UIViewController, UICollectionViewDataSource, UICo
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        do {
+            reflexArray = try context.fetch(Reflexion.fetchRequest())
+        } catch let error as NSError {
+            print("Não foi possivel buscar o dado. \(error), \(error.userInfo)")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -73,7 +85,7 @@ class ReflexaoViewController: UIViewController, UICollectionViewDataSource, UICo
 
 extension ReflexaoViewController: NovaReflexViewControllerDelegate {
     
-    func addNovaReflexViewController(_ controller: NovaReflexViewController, didFinishAdding item: Reflexao) {
+    func addNovaReflexViewController(_ controller: NovaReflexViewController, didFinishAdding item: Reflexion) {
         navigationController?.popViewController(animated: true)
         let rowIndex = reflexArray.count
         reflexArray.append(item)

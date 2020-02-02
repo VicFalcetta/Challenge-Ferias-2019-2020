@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import CoreData
 
 protocol NovoObjViewControllerDelegate: class {
     func addNovoObjViewControllerDidCancel (_ controller: NovoObjViewController)
-    func addNovoObjViewController (_ controller: NovoObjViewController, didFinishAdding item: Objetivos)
+    func addNovoObjViewController (_ controller: NovoObjViewController, didFinishAdding item: Objetive)
 }
 
 class NovoObjViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     
     weak var delegate: NovoObjViewControllerDelegate?
     var prioridadeSelecionada: Int = 0
+    
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var pickerLembrete: UIDatePicker!
     @IBOutlet weak var tituloTextField: UITextField!
@@ -40,14 +44,14 @@ class NovoObjViewController: UIViewController, UITextViewDelegate, UITextFieldDe
     }
     
     @IBAction func addNovoObj(_ sender: Any) {
-        let novoObj = Objetivos(titulo: "", descricao: "", prioridade: 0, hora: "")
+        let novoObj = Objetive(entity: Objetive.entity(), insertInto: context)
         if let fieldTituloObj = tituloTextField.text {
             novoObj.titulo = fieldTituloObj
         }
         if let fieldDescObj = descTextView.text {
             novoObj.descricao = fieldDescObj
         }
-        novoObj.prioridade = prioridadeSelecionada
+        novoObj.prioridade = Int32(prioridadeSelecionada)
         
         pickerLembrete.datePickerMode = .time
         let date = pickerLembrete.date
@@ -61,6 +65,7 @@ class NovoObjViewController: UIViewController, UITextViewDelegate, UITextFieldDe
         }
         
         delegate?.addNovoObjViewController(self, didFinishAdding: novoObj)
+        appDelegate.saveContext()
     }
     
     @IBAction func cancelNovoObj(_ sender: Any) {

@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import CoreData
 
 protocol NovaReflexViewControllerDelegate: class {
     func addNovaReflexViewControllerDidCancel (_ controller: NovaReflexViewController)
-    func addNovaReflexViewController (_ controller: NovaReflexViewController, didFinishAdding item: Reflexao)
+    func addNovaReflexViewController (_ controller: NovaReflexViewController, didFinishAdding item: Reflexion)
 }
 
 class NovaReflexViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
     weak var delegate: NovaReflexViewControllerDelegate?
+    
+    private let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     @IBOutlet weak var tituloTextField: UITextField!
     @IBOutlet weak var descTextView: UITextView!
@@ -33,7 +37,7 @@ class NovaReflexViewController: UIViewController, UITextViewDelegate, UITextFiel
     }
     
     @IBAction func addReflex(_ sender: Any) {
-        let novaReflex = Reflexao(titulo: "", descricao: "")
+        let novaReflex = Reflexion(entity: Reflexion.entity(), insertInto: context)
         if let tituloReflex = tituloTextField.text {
             novaReflex.titulo = tituloReflex
         }
@@ -41,6 +45,7 @@ class NovaReflexViewController: UIViewController, UITextViewDelegate, UITextFiel
             novaReflex.descricao = descReflex
         }
         delegate?.addNovaReflexViewController(self, didFinishAdding: novaReflex)
+        appDelegate.saveContext()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

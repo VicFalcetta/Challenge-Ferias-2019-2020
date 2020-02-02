@@ -12,6 +12,10 @@
 		223D80DE23E3B06A002F5DFA /* ReflexaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80DD23E3B06A002F5DFA /* ReflexaoViewController.swift */; };
 		223D80E023E3B078002F5DFA /* NovaReflexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80DF23E3B078002F5DFA /* NovaReflexViewController.swift */; };
 		223D80E223E3B088002F5DFA /* DetalheReflexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223D80E123E3B088002F5DFA /* DetalheReflexViewController.swift */; };
+		22AA439923E78877001B1F9B /* Objetive+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA439523E78877001B1F9B /* Objetive+CoreDataClass.swift */; };
+		22AA439A23E78877001B1F9B /* Objetive+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA439623E78877001B1F9B /* Objetive+CoreDataProperties.swift */; };
+		22AA439B23E78877001B1F9B /* Reflexion+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA439723E78877001B1F9B /* Reflexion+CoreDataClass.swift */; };
+		22AA439C23E78878001B1F9B /* Reflexion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AA439823E78877001B1F9B /* Reflexion+CoreDataProperties.swift */; };
 		22CC81B723DA738000058EC1 /* Objetivos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81B623DA738000058EC1 /* Objetivos.swift */; };
 		22CC81B923DA74A700058EC1 /* Reflexao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81B823DA74A700058EC1 /* Reflexao.swift */; };
 		22CC81BD23DB915D00058EC1 /* ObjCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */; };
@@ -58,6 +62,10 @@
 		223D80DD23E3B06A002F5DFA /* ReflexaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexaoViewController.swift; sourceTree = "<group>"; };
 		223D80DF23E3B078002F5DFA /* NovaReflexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaReflexViewController.swift; sourceTree = "<group>"; };
 		223D80E123E3B088002F5DFA /* DetalheReflexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheReflexViewController.swift; sourceTree = "<group>"; };
+		22AA439523E78877001B1F9B /* Objetive+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Objetive+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		22AA439623E78877001B1F9B /* Objetive+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Objetive+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		22AA439723E78877001B1F9B /* Reflexion+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reflexion+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		22AA439823E78877001B1F9B /* Reflexion+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reflexion+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		22CC81B623DA738000058EC1 /* Objetivos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetivos.swift; sourceTree = "<group>"; };
 		22CC81B823DA74A700058EC1 /* Reflexao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflexao.swift; sourceTree = "<group>"; };
 		22CC81BC23DB915D00058EC1 /* ObjCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -156,6 +164,10 @@
 		22EFB15723D8F9ED002D35B1 /* Proativi */ = {
 			isa = PBXGroup;
 			children = (
+				22AA439523E78877001B1F9B /* Objetive+CoreDataClass.swift */,
+				22AA439623E78877001B1F9B /* Objetive+CoreDataProperties.swift */,
+				22AA439723E78877001B1F9B /* Reflexion+CoreDataClass.swift */,
+				22AA439823E78877001B1F9B /* Reflexion+CoreDataProperties.swift */,
 				223D80BD23E1CD9B002F5DFA /* Fonts */,
 				22CC81B523DA736A00058EC1 /* Model */,
 				22EFB17123DA6C8A002D35B1 /* Controller */,
@@ -256,17 +268,21 @@
 			files = (
 				22CC81BD23DB915D00058EC1 /* ObjCollectionViewCell.swift in Sources */,
 				22CC81B923DA74A700058EC1 /* Reflexao.swift in Sources */,
+				22AA439A23E78877001B1F9B /* Objetive+CoreDataProperties.swift in Sources */,
 				22EFB15D23D8F9ED002D35B1 /* NovoObjViewController.swift in Sources */,
 				223D80DE23E3B06A002F5DFA /* ReflexaoViewController.swift in Sources */,
 				22CC81B723DA738000058EC1 /* Objetivos.swift in Sources */,
 				22EFB17023DA6BEE002D35B1 /* ObjtViewController.swift in Sources */,
 				223D80E023E3B078002F5DFA /* NovaReflexViewController.swift in Sources */,
+				22AA439C23E78878001B1F9B /* Reflexion+CoreDataProperties.swift in Sources */,
+				22AA439B23E78877001B1F9B /* Reflexion+CoreDataClass.swift in Sources */,
 				223D80E223E3B088002F5DFA /* DetalheReflexViewController.swift in Sources */,
 				22EFB15923D8F9ED002D35B1 /* AppDelegate.swift in Sources */,
 				223D80DC23E3B014002F5DFA /* ReflexCollectionViewCell.swift in Sources */,
 				22EFB15B23D8F9ED002D35B1 /* SceneDelegate.swift in Sources */,
 				22EFB16323D8F9ED002D35B1 /* Proativi.xcdatamodeld in Sources */,
 				223D80DA23E241E2002F5DFA /* DetalheObjViewController.swift in Sources */,
+				22AA439923E78877001B1F9B /* Objetive+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

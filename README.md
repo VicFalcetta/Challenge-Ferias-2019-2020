@@ -1,4 +1,6 @@
-# Proativi
+![Image icone](https://github.com/VicFalcetta/Proativi/blob/develop/imagens/iconeProativi.png)
+
+# Proativi - App de produtividade
 
 Aplicativo baseado no conceito do Pomodoro para ajudar em sua proatividade. Arrume nele os seus afazeres e deixe escrito suas reflexões sobre o seu dia.
 
